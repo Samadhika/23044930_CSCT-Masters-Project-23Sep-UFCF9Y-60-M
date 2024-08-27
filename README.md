@@ -1,25 +1,26 @@
 "# 23044930_CSCT-Masters-Project-23Sep-UFCF9Y-60-M" 
 
-Download the files attached in the GitHub and proceed for analysis
-Adult Income Dataset: Target Variable: Income; Sensitive feature: Sex
-Bank Marketing Dataset: Target Variable: Ter_Deposit; Sensitive Feature: marital status
-Ps: You can choose any sensitive feature but target variable works well only with Binary values as per the development thus far.
+Download the files attached in the GitHub  to your PC and proceed for analysis
 
-
-1. To start the Streamlit app, run:
+1. To start the Streamlit app, run:(make sure you run the streamlit app in the place the Application python file is located)
    ```bash
    streamlit run Application.py --server.enableXsrfProtection false
    ```
    ### Required Python Libraries
-   The following Python libraries are required for this project:
+   The following Python libraries are required for this project: Please install the following in the bash
    - Streamlit
    - pandas
    - numpy
    - scikit-learn
    - fairlearn
 
-2. Open the provided URL in your web browser to access the app.
-3. Upload your dataset, select the necessary columns, and start analyzing bias in your models.
+2. Upload your dataset, select the necessary columns, and start analyzing bias in your models.
+Adult Income Dataset: Target Variable: Income; Sensitive feature: Sex
+Bank Marketing Dataset: Target Variable: Ter_Deposit; Sensitive Feature: marital status
+Ps: You can choose any sensitive feature but target variable works well only with Binary values as per the development thus far.
+
+
+
 
 About: 
 AI Fairness Analysis Tool
