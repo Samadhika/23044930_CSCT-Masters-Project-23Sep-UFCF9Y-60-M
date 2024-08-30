@@ -3,7 +3,7 @@
 
 # ### CSCT Masters Project 23Sep-UFCF9Y-60-M
 # #### Student_Number:23044930
-# #### Title: Evaluation of Model Bias and Fairness in Machine Learning Models: A study based on Bias Mitigation
+# #### Title: Interactive Framework for Bias Detection and Mitigation in Machine Learning Models Using Fairness Constraints.
 
 # ### Content
 #  #### 1. Initialisation
@@ -73,7 +73,15 @@ def about_section():
         Bias in machine learning refers to the systematic error that leads a model to make incorrect assumptions 
         about data. This can result from the way data is collected, processed, or how a model is trained. 
         Our tool provides a quantified figure to measure bias in models, helping you understand how fairly 
-        your model treats different groups defined by sensitive features such as gender, race, or age.
+        your model treats different groups defined by sensitive features such as gender, race, or age. And to mitigate the identified bias.
+    
+        
+        This user-friendly interface was developed to check the percentage of bias that may exist in your dataset against sensitive 
+        features like gender, age, race,marital status etc.This interface allows user to upload the data, select the target variable
+        and sensitive feature and check for the bias percentage and proceed to mitigate the bias based on chosen fairness constriant.
+        The initial stage of development only allows for target column in binary value analysis
+        of the data. Future developments would allow you to check and mitigate bias percentage with any target column.
+        This project was developed as a artefact of the Msc. thesis. Enjoy!
         """
     )
 
@@ -147,6 +155,7 @@ def encode_columns(data, sensitive_feature_column):
 # In[ ]:
 
 
+#Initial bias check
 def check_bias_logistic_regression(data, target_column, sensitive_feature_column, sensitive_feature_mapping):
     """Performs an initial bias check using Logistic Regression.
     

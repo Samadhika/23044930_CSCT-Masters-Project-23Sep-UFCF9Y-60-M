@@ -19,7 +19,7 @@ Adult Income Dataset: Target Variable: Income; Sensitive feature: Sex
 Bank Marketing Dataset: Target Variable: Ter_Deposit; Sensitive Feature: marital status
 Ps: You can choose any sensitive feature but target variable works well only with Binary values as per the development thus far.
 
-
+A notebook is added as Bias Check Notebook if you are unable to run the streamlit app.
 
 
 About: 
